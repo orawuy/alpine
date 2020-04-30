@@ -1,6 +1,1 @@
 FROM alpine
-WORKDIR ./work
-COPY ./package.json ./package.json
-RUN npm install
-COPY . .
-ENTRYPOINT [ "node", "." ]
